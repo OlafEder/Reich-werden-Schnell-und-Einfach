@@ -2,62 +2,79 @@
 <html lang="de">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Reich werden – Schnell und Einfach">
+    <meta property="og:description" content="Zugang zum geheimen System für finanziellen Erfolg – 2025">
+    <meta property="og:image" content="https://dummyimage.com/600x315/000/fff&text=💸+Schnell+reich+werden">
+    <meta property="og:url" content="https://olafeder.github.io/reich-werden-schnell-und-einfach/">
     <title>Reich werden – Schnell und Einfach</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
     <style>
       body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f4;
+        font-family: 'Orbitron', sans-serif;
+        background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+        color: white;
         display: flex;
-        flex-direction: column;
         align-items: center;
         justify-content: center;
         height: 100vh;
         margin: 0;
       }
       .container {
-        background: white;
+        background: #222;
         padding: 40px;
-        border-radius: 10px;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        border-radius: 15px;
+        box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
         text-align: center;
         max-width: 400px;
+        animation: pulse 4s infinite;
+      }
+      @keyframes pulse {
+        0% { box-shadow: 0 0 10px rgba(255,215,0,0.3); }
+        50% { box-shadow: 0 0 30px rgba(255,215,0,0.7); }
+        100% { box-shadow: 0 0 10px rgba(255,215,0,0.3); }
       }
       input {
         padding: 12px;
         width: 90%;
         font-size: 1em;
-        margin-top: 15px;
-        margin-bottom: 20px;
+        margin: 15px 0;
         border-radius: 5px;
-        border: 1px solid #ccc;
+        border: none;
+        background: #111;
+        color: #fff;
+        border: 2px solid #444;
       }
       button {
         padding: 12px 25px;
         font-size: 1em;
-        background-color: #28a745;
-        color: white;
+        background: linear-gradient(90deg, gold, orange);
+        color: black;
         border: none;
-        border-radius: 5px;
+        border-radius: 8px;
         cursor: pointer;
+        box-shadow: 0 0 10px gold;
+        transition: transform 0.2s;
       }
       button:hover {
-        background-color: #218838;
+        transform: scale(1.05);
+        box-shadow: 0 0 20px gold;
       }
       .info {
-        font-size: 0.9em;
-        color: #777;
+        font-size: 0.85em;
+        color: #bbb;
         margin-top: -10px;
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <h2>Reich werden – Schnell und Einfach</h2>
-      <p>Trage deinen Namen ein, um Zugang zu einem geheimen System für finanziellen Durchbruch zu erhalten.</p>
+      <h2>💸 Schnell reich werden 2025</h2>
+      <p>Trage deinen Namen ein und erhalte Zugang zum geheimen System, das Tausende bereits nutzen.</p>
       <input type="text" id="name" placeholder="Dein voller Name" />
-      <div class="info">Vertraulich – nur für ausgewählte Interessenten</div>
+      <div class="info">Vertraulich & verschlüsselt – Sofortiger Zugang</div>
       <br />
-      <button onclick="weiterleiten()">Jetzt starten</button>
+      <button onclick="weiterleiten()">Jetzt Zugang sichern</button>
     </div>
 
     <script>
@@ -68,10 +85,10 @@
           return;
         }
 
-        // Optional: Hier könnte man den Namen speichern oder senden
+        // Log optional
         console.log("Teilnehmer:", name);
 
-        // Weiterleitung zum Rickroll
+        // Weiterleitung
         window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
       }
     </script>
